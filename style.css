@@ -1,0 +1,186 @@
+/* Estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a202c;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Cabeçalho */
+header {
+    background-color: transparent;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+header.sticky {
+    background-color: #2d3748;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #63b3ed;
+}
+
+/* Seção Principal */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 100px 20px 20px;
+    background: linear-gradient(to bottom, #1a202c, #2d3748);
+    position: relative;
+}
+
+.hero-content {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.hero-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: transparent; /* Garante fundo transparente */
+}
+
+/* Estilo para a imagem da seção Hero */
+.hero-image img {
+    width: 450px; /* Reduzindo o tamanho da imagem */
+    height: auto;
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: none; /* Sem sombra */
+    background: transparent; /* Fundo transparente */
+    border: none; /* Sem borda */
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #3182ce;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    background-color: #2b6cb0;
+}
+
+.btn-secondary {
+    background-color: #2d3748;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    transform: scale(1.05);
+    background-color: #4a5568;
+}
+
+/* Seções Gerais */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#about, #portfolio, #contact {
+    background-color: #2d3748;
+    border-radius: 10px;
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-content {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-image img {
+        max-width: 180px;
+    }
+}
