@@ -1,27 +1,29 @@
-/* Estilos globais */
+/* Reset de estilos básicos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilo do corpo */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #1a202c;
     color: #fff;
     overflow-x: hidden;
+    position: relative;
 }
 
-h1, h2, h3, p {
-    margin: 0;
-    padding: 0;
+/* Particles.js */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Coloca o fundo atrás do conteúdo principal */
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
 
 /* Cabeçalho */
 header {
@@ -63,7 +65,7 @@ header nav ul li a:hover {
     color: #63b3ed;
 }
 
-/* Seção Principal */
+/* Seção Principal (Hero) */
 .hero {
     display: flex;
     flex-wrap: wrap;
@@ -71,7 +73,6 @@ header nav ul li a:hover {
     align-items: center;
     min-height: 100vh;
     padding: 100px 20px 20px;
-    background: linear-gradient(to bottom, #1a202c, #2d3748);
     position: relative;
 }
 
@@ -97,20 +98,20 @@ header nav ul li a:hover {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    background-color: transparent; /* Garante fundo transparente */
+    background-color: transparent;
 }
 
 /* Estilo para a imagem da seção Hero */
 .hero-image img {
     width: 450px; /* Reduzindo o tamanho da imagem */
     height: auto;
-    border-radius: 15px; /* Bordas arredondadas */
-    box-shadow: none; /* Sem sombra */
-    background: transparent; /* Fundo transparente */
-    border: none; /* Sem borda */
+    border-radius: 15px;
+    box-shadow: none;
+    background: transparent;
+    border: none;
 }
 
-/* Botões */
+/* Animação de escala nos botões */
 .btn {
     display: inline-block;
     text-decoration: none;
@@ -127,7 +128,7 @@ header nav ul li a:hover {
 }
 
 .btn-primary:hover {
-    transform: scale(1.05);
+    transform: scale(1.1); /* Aumenta o tamanho ao passar o mouse */
     background-color: #2b6cb0;
 }
 
@@ -137,9 +138,10 @@ header nav ul li a:hover {
 }
 
 .btn-secondary:hover {
-    transform: scale(1.05);
+    transform: scale(1.1); /* Aumenta o tamanho ao passar o mouse */
     background-color: #4a5568;
 }
+
 
 /* Seções Gerais */
 section {
@@ -182,5 +184,228 @@ section {
 
     .hero-image img {
         max-width: 180px;
+    }
+}
+/* Botões de redes sociais */
+.social-buttons {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 999; /* Garantir que fiquem acima das partículas */
+}
+
+.social-btn {
+    background-color: #2d3748;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Estilos para o LinkedIn */
+.social-btn.linkedin {
+    background-color: #0077b5; /* Cor do LinkedIn */
+}
+
+.social-btn.linkedin:hover {
+    background-color: #005f80; /* Cor de hover */
+    transform: scale(1.1); /* Efeito de aumentar ao passar o mouse */
+}
+
+/* Estilos para o WhatsApp */
+.social-btn.whatsapp {
+    background-color: #25d366; /* Cor do WhatsApp */
+}
+
+.social-btn.whatsapp:hover {
+    background-color: #128c7e; /* Cor de hover */
+    transform: scale(1.1); /* Efeito de aumentar ao passar o mouse */
+}
+
+.social-btn i {
+    font-size: 1.2rem; /* Ícone do tamanho adequado */
+}
+/* Formulário de Contato */
+#contact {
+    background-color: rgba(45, 55, 72, 0.9);
+    padding: 70px 30px;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: 80px auto; /* Aumentando a margem superior para separar mais do topo */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Título do formulário */
+#contact h3 {
+    margin-bottom: 50px; /* Aumentando o espaçamento entre o título e o formulário */
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: center;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Aumentando o espaçamento entre os campos */
+    justify-content: center;
+    width: 100%;
+    max-width: 700px;
+}
+
+/* Containers de campo com a label ao lado */
+form .field {
+    display: flex;
+    align-items: center; /* Alinha label e campo de texto no centro verticalmente */
+    gap: 15px; /* Espaçamento entre a label e o input/textarea */
+}
+
+/* Estilo das labels */
+form label {
+    font-size: 1.2rem;
+    color: #fff;
+    width: 120px; /* Define uma largura fixa para as labels */
+    text-align: center; /* Alinha a label ao centro */
+}
+
+/* Estilo dos campos de texto (input e textarea) */
+form input,
+form textarea {
+    padding: 18px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+    flex: 1; /* Faz o campo de texto ocupar o restante do espaço */
+}
+
+/* Aumentar a área do campo de texto (textarea) */
+form textarea {
+    height: 150px; /* Aumenta a altura do textarea */
+}
+
+/* Foco nos campos */
+form input:focus,
+form textarea:focus {
+    border-color: rgba(43, 108, 176, 0.8);
+    box-shadow: 0 0 8px rgba(43, 108, 176, 0.5);
+}
+
+/* Estilo do botão */
+form button {
+    padding: 18px 25px;
+    background-color: rgba(43, 108, 176, 0.8);
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+    text-align: center;
+}
+
+/* Hover no botão */
+form button:hover {
+    background-color: rgba(43, 108, 176, 1);
+    transform: scale(1.05);
+}
+
+/* Foco no botão */
+form button:focus {
+    outline: none;
+}
+
+/* Estilo dos placeholders */
+form input::placeholder,
+form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    font-style: italic;
+}
+
+/* Foco nos placeholders */
+form input:focus::placeholder,
+form textarea:focus::placeholder {
+    color: rgba(43, 108, 176, 0.8);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    form .field {
+        flex-direction: column;
+        align-items: flex-start; /* Alinha label e campo de texto verticalmente */
+    }
+
+    form label {
+        margin-bottom: 8px;
+    }
+}
+header h1 a {
+    color: #fff; /* Define o texto como branco */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+header h1 a:hover {
+    color: #ddd; /* Cor mais clara ao passar o mouse (opcional) */
+}
+/* Frase de Impacto */
+.impacto {
+    font-size: 4rem; /* Frase bem maior */
+    line-height: 1.4;
+    font-weight: 800;
+    color: #FF4500; /* Cor mais vibrante para a frase */
+    margin-bottom: 30px; /* Maior espaço abaixo */
+}
+
+/* Seção Sobre Mim */
+.sobre-mim {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: #fff;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Destaques na seção Sobre Mim */
+.destaque {
+    font-weight: 700;
+}
+
+.nome {
+    color: #32CD32; /* Verde para o nome */
+}
+
+.formacao {
+    color: #FFD700; /* Dourado para a formação */
+}
+
+.destaque:not(.nome):not(.formacao) {
+    color: #63b3ed; /* Cor azul para outras habilidades */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .impacto {
+        font-size: 2.8rem; /* Tamanho um pouco menor em telas pequenas */
+    }
+
+    .sobre-mim {
+        font-size: 1.2rem; /* Ajuste do texto */
     }
 }

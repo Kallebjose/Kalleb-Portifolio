@@ -3,39 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - [Seu Nome]</title>
+    <title>Portfólio - Kalleb Sousa</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 <body>
-    <!-- Cabeçalho -->
+    <!-- Contêiner para o efeito de partículas -->
+    <div id="particles-js"></div>
+
+    <!-- Conteúdo do portfólio -->
     <header>
-        <h1>[Seu Nome]</h1>
+        <h1> <a href="index.html">Kalleb Sousa </a></h1>
         <nav>
             <ul>
                 <li><a href="#home">Início</a></li>
                 <li><a href="#about">Sobre Mim</a></li>
                 <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Seção Principal -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h2>Olá, eu sou [Seu Nome]</h2>
-            <p>Sou um Desenvolvedor em busca de desafios e crescimento profissional.</p>
+            <h2 >Inovação, criatividade e tecnologia <br>
+                <span class="destaque">Juntos, vamos transformar ideias em realidade</h2></span>
+            <p>
+                Olá! Sou <span class="destaque">Kalleb Sousa</span>, recém-formado em <span class="formacao">Técnico em Informática</span>, com conhecimentos em 
+                <span class="destaque">HTML</span>, <span class="destaque">CSS</span>, <span class="destaque">Kotlin</span> e <span class="destaque">Java</span>, e uma paixão crescente por 
+                <span class="destaque">computação em nuvem</span>. Sou movido pela <span class="destaque">curiosidade</span> e <span class="destaque">determinação</span> de criar soluções 
+                criativas para problemas do mundo real. Meu objetivo é colaborar com equipes inspiradoras, desenvolver projetos 
+                inovadores e crescer como profissional na área de tecnologia. Vamos construir algo incrível juntos?
+            </p>
             <div class="buttons">
                 <a href="#about" class="btn btn-primary">Sobre Mim</a>
                 <a href="#portfolio" class="btn btn-secondary">Portfólio</a>
             </div>
         </div>
         <div class="hero-image">
-            <img src="sua-foto.png" alt="Foto do Desenvolvedor">
+            <img src="sua-foto.jpg" alt="Foto do Desenvolvedor">
+        </div>
+        <div class="social-buttons">
+            <a href="https://www.linkedin.com/in/kallebjs/" class="social-btn linkedin" target="_blank">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://wa.me/+5511937293668" class="social-btn whatsapp" target="_blank">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
         </div>
     </section>
 
-    <!-- Seção Sobre Mim -->
     <section id="about">
         <h3>Sobre Mim</h3>
         <p>
@@ -45,13 +63,11 @@
         </p>
     </section>
 
-    <!-- Seção Portfólio -->
     <section id="portfolio">
         <h3>Portfólio</h3>
         <p>Projetos em breve!</p>
     </section>
 
-    <!-- Seção Contato -->
     <section id="contact">
         <h3>Entre em Contato</h3>
         <div class="social-links">
@@ -60,6 +76,7 @@
         </div>
     </section>
 
+    <!-- Inclusão do script principal -->
     <script src="script.js"></script>
 </body>
 </html>
