@@ -9,7 +9,7 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: #1a202c;
-    color: #fff;
+    color: #c0c0c0;
     overflow-x: hidden;
     position: relative;
 }
@@ -387,16 +387,8 @@ header h1 a:hover {
     font-weight: 700;
 }
 
-.nome {
-    color: #32CD32; /* Verde para o nome */
-}
-
-.formacao {
-    color: #FFD700; /* Dourado para a formação */
-}
-
 .destaque:not(.nome):not(.formacao) {
-    color: #63b3ed; /* Cor azul para outras habilidades */
+    color: #319795; /* Cor azul para outras habilidades */
 }
 
 /* Responsividade */

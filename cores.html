@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Colorida</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1a202c;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            width: 80%;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .box + p {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .azul-neon {
+            background-color: #4fd1c5;
+        }
+
+        .verde-lima {
+            background-color: #d53f8c;
+        }
+
+        .roxo-vivido {
+            background-color: #805ad5;
+        }
+
+        .laranja-corajoso {
+            background-color: #ed8936;
+        }
+
+        .amarelo-quente {
+            background-color: #f6e05e;
+        }
+
+        .cinza-claro {
+            background-color: #c0c0c0;
+        }
+
+        .off-white {
+            background-color: #e8e4d6;
+        }
+        .turq {
+            background-color: #319795;
+        }
+
+        p span {
+            color: white;
+        }
+
+        p span.color {
+            color: inherit;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box azul-neon"></div>
+        <p>Uma palavra <span>branca</span> e outra <span class="color" style="color: #4fd1c5;">colorida</span></p>
+
+        <div class="box verde-lima"></div>
+        <p>Uma palavra <span>branca</span> e outra <span class="color" style="color: #d53f8c;">colorida</span></p>
+
+        <div class="box roxo-vivido"></div>
+        <p>Uma palavra <span>branca</span> e outra <span class="color" style="color: #805ad5;">colorida</span></p>
+
+        <div class="box laranja-corajoso"></div>
+        <p>Uma palavra <span>branca</span> e outra <span class="color" style="color: #ed8936;">colorida</span></p>
+<br><br>
+        <div class="box amarelo-quente"></div>
+        <p>Uma palavra <span>branca</span> e outra <span class="color" style="color: #f6e05e;">colorida</span></p>
+
+        <div class="box cinza-claro"></div>
+        <p>Uma palavra <span>branca</span> e outra <span class="color" style="color: #c0c0c0;">colorida</span></p>
+
+        <div class="box off-white"></div>
+        <p>Uma palavra <span>branca</span> e outra <span class="color" style="color: #e8e4d6;">colorida</span></p>
+
+    <div class="box turq"></div>
+        <p>Uma palavra <span>branca</span> e outra <span class="color" style="color: #319795;">colorida</span></p>
+    </div>
+</body>
+</html>
