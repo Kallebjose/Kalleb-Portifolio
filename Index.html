@@ -6,35 +6,27 @@
     <title>Portfólio - Kalleb Sousa</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 <body>
-    <!-- Contêiner para o efeito de partículas -->
     <div id="particles-js"></div>
-
-    <!-- Conteúdo do portfólio -->
     <header>
-        <h1> <a href="index.html">Kalleb Sousa </a></h1>
+        <h1><a href="#home">Kalleb Sousa</a></h1>
         <nav>
             <ul>
                 <li><a href="#home">Início</a></li>
                 <li><a href="#about">Sobre Mim</a></li>
                 <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a href="#contact">Contato</a></li>
             </ul>
         </nav>
     </header>
-
     <section id="home" class="hero">
         <div class="hero-content">
-            <h2 >A inovação começa com uma ideia. <br>
-                <span class="destaque">Vamos dar vida a ela juntos.</h2></span>
+            <h2>A inovação começa com uma ideia. <br><span class="destaque">Vamos dar vida a ela juntos.</span></h2>
             <p>
-                Olá! Sou <span class="destaque">Kalleb Sousa</span>, recém-formado em <span class="destaque">Técnico em Informática</span>, com conhecimentos em 
-                <span class="destaque">HTML</span>, <span class="destaque">CSS</span>, <span class="destaque">Kotlin</span> e <span class="destaque">Java</span>, e uma paixão crescente por 
-                computação em nuvem. Sou movido pela curiosidade e determinação de criar soluções 
-                criativas para problemas do mundo real. Meu objetivo é colaborar com equipes inspiradoras, desenvolver projetos 
-                inovadores e crescer como profissional na área de tecnologia. Vamos construir algo incrível juntos?
+                Olá! Sou <span class="destaque">Kalleb Sousa</span>, recém-formado em <span class="destaque">Técnico em Informática</span>, com conhecimentos em <span class="destaque">HTML</span>, <span class="destaque">CSS</span>, <span class="destaque">Kotlin</span> e <span class="destaque">Java</span>, e uma paixão crescente por computação em nuvem. Sou movido pela curiosidade e determinação de criar soluções criativas para problemas do mundo real.
             </p>
             <div class="buttons">
                 <a href="#about" class="btn btn-primary">Sobre Mim</a>
@@ -45,38 +37,53 @@
             <img src="sua-foto.jpg" alt="Foto do Desenvolvedor">
         </div>
         <div class="social-buttons">
-            <a href="https://www.linkedin.com/in/kallebjs/" class="social-btn linkedin" target="_blank">
-                <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
-            <a href="https://wa.me/+5511937293668" class="social-btn whatsapp" target="_blank">
-                <i class="fab fa-whatsapp"></i> WhatsApp
-            </a>
+            <a href="https://www.linkedin.com/in/kallebjs/" class="social-btn linkedin" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://wa.me/+5511937293668" class="social-btn whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
         </div>
     </section>
-
+    
     <section id="about">
-        <h3>Sobre Mim</h3>
-        <p>
-            Acabei de concluir o Ensino Médio Técnico, obtendo meu diploma em Técnico de Informática. 
-            Durante minha formação, desenvolvi habilidades em programação, lógica computacional e tecnologias web. 
-            Sou apaixonado por aprender, explorar novas tecnologias e criar soluções inovadoras.
-        </p>
+        <p>Asdfasd asdf asdf</p>
     </section>
 
     <section id="portfolio">
         <h3>Portfólio</h3>
-        <p>Projetos em breve!</p>
-    </section>
+        <div class="projeto">
+            <h4>Gerador de Documentos Word via Excel (VBA)</h4>
+            <p>Automação que permite gerar documentos Word personalizados a partir de dados em planilhas.</p>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/SEU_VIDEO_1" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
 
-    <section id="contact">
-        <h3>Entre em Contato</h3>
-        <div class="social-links">
-            <a href="https://www.linkedin.com" class="linkedin">LinkedIn</a>
-            <a href="https://wa.me/seunumero" class="whatsapp">WhatsApp</a>
+        <div class="projeto">
+            <h4>Conversor Word para PDF (Excel VBA)</h4>
+            <p>Automação que converte documentos Word em PDF diretamente via Excel.</p>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/SEU_VIDEO_2" frameborder="0" allowfullscreen></iframe>
+            </div>
         </div>
     </section>
 
-    <!-- Inclusão do script principal -->
+    <section id="contact">
+        <h3>Contato</h3>
+        <p>Preencha o formulário abaixo para entrar em contato:</p>
+        <form id="contactForm">
+            <div class="field">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required placeholder="Seu nome">
+            </div>
+            <div class="field">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="Seu e-mail">
+            </div>
+            <div class="field">
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required placeholder="Sua mensagem"></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>

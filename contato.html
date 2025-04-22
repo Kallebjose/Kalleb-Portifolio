@@ -5,59 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - Kalleb Sousa</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 <body>
-    <!-- Contêiner para o efeito de partículas -->
     <div id="particles-js"></div>
-
-    <!-- Cabeçalho -->
     <header>
-
-            <h1> <a href="index.html">Kalleb Sousa </a></h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html#home">Início</a></li>
-                    <li><a href="index.html#about">Sobre Mim</a></li>
-                    <li><a href="index.html#portfolio">Portfólio</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
-
+        <h1><a href="index.html">Kalleb Sousa</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Início</a></li>
+                <li><a href="index.html#about">Sobre Mim</a></li>
+                <li><a href="index.html#portfolio">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <!-- Seção de Contato -->
     <section id="contact">
-        <div class="container">
-            <h2>Entre em Contato</h2>
-            <br>
-            <h4>Fique à vontade para me enviar uma mensagem, estarei pronto para responder!</h4>
-<br><br>
-            <!-- Formulário de Contato -->
-            <form id="contactForm">
-                <div class="field">
-                    <label for="name">Nome</label>
-                    <input type="text" id="name" name="name" placeholder="Seu Nome" required>
-                </div>
-                <div class="field">
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email" placeholder="Seu E-mail" required>
-                </div>
-                <div class="field">
-                    <label for="message">Mensagem</label>
-                    <textarea id="message" name="message" placeholder="Sua Mensagem" required></textarea>
-                </div>
-                <button type="submit">Enviar</button>
-            </form>           
-        </div>
-
-        <div id="successMessage" style="display:none; text-align:center; margin-top:20px; padding:10px; background-color: #4CAF50; color: white; border-radius: 5px;">
-            Mensagem enviada com sucesso!
-        </div>
+        <h2>Entre em Contato</h2>
+        <form id="contactForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="successMessage" style="display: none;">Mensagem enviada com sucesso!</div>
     </section>
-
-    <!-- Inclusão do script de partículas -->
     <script src="script.js"></script>
 </body>
 </html>

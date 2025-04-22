@@ -7,7 +7,7 @@
 
 /* Estilo do corpo */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Lato', sans-serif;
     background-color: #1a202c;
     color: #c0c0c0;
     overflow-x: hidden;
@@ -16,14 +16,13 @@ body {
 
 /* Particles.js */
 #particles-js {
-    position: fixed;
-    width: 100%;
-    height: 100%;
+    position: fixed;  
     top: 0;
     left: 0;
-    z-index: -1; /* Coloca o fundo atrás do conteúdo principal */
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
 }
-
 
 /* Cabeçalho */
 header {
@@ -39,11 +38,6 @@ header {
     transition: background-color 0.3s ease;
 }
 
-header.sticky {
-    background-color: #2d3748;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
 header h1 {
     font-size: 1.5rem;
 }
@@ -52,6 +46,10 @@ header nav ul {
     list-style: none;
     display: flex;
     gap: 15px;
+}
+
+header nav ul li {
+    display: inline;
 }
 
 header nav ul li a {
@@ -101,9 +99,8 @@ header nav ul li a:hover {
     background-color: transparent;
 }
 
-/* Estilo para a imagem da seção Hero */
 .hero-image img {
-    width: 450px; /* Reduzindo o tamanho da imagem */
+    width: 450px;
     height: auto;
     border-radius: 15px;
     box-shadow: none;
@@ -111,7 +108,7 @@ header nav ul li a:hover {
     border: none;
 }
 
-/* Animação de escala nos botões */
+/* Botões */
 .btn {
     display: inline-block;
     text-decoration: none;
@@ -128,7 +125,7 @@ header nav ul li a:hover {
 }
 
 .btn-primary:hover {
-    transform: scale(1.1); /* Aumenta o tamanho ao passar o mouse */
+    transform: scale(1.1);
     background-color: #2b6cb0;
 }
 
@@ -138,10 +135,9 @@ header nav ul li a:hover {
 }
 
 .btn-secondary:hover {
-    transform: scale(1.1); /* Aumenta o tamanho ao passar o mouse */
+    transform: scale(1.1);
     background-color: #4a5568;
 }
-
 
 /* Seções Gerais */
 section {
@@ -186,6 +182,7 @@ section {
         max-width: 180px;
     }
 }
+
 /* Botões de redes sociais */
 .social-buttons {
     position: absolute;
@@ -194,7 +191,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    z-index: 999; /* Garantir que fiquem acima das partículas */
+    z-index: 999;
 }
 
 .social-btn {
@@ -211,76 +208,71 @@ section {
     gap: 10px;
 }
 
-/* Estilos para o LinkedIn */
 .social-btn.linkedin {
-    background-color: #0077b5; /* Cor do LinkedIn */
+    background-color: #0077b5;
 }
 
 .social-btn.linkedin:hover {
-    background-color: #005f80; /* Cor de hover */
-    transform: scale(1.1); /* Efeito de aumentar ao passar o mouse */
+    background-color: #005f80;
+    transform: scale(1.1);
 }
 
-/* Estilos para o WhatsApp */
 .social-btn.whatsapp {
-    background-color: #25d366; /* Cor do WhatsApp */
+    background-color: #25d366;
 }
 
 .social-btn.whatsapp:hover {
-    background-color: #128c7e; /* Cor de hover */
-    transform: scale(1.1); /* Efeito de aumentar ao passar o mouse */
+    background-color: #128c7e;
+    transform: scale(1.1);
 }
 
 .social-btn i {
-    font-size: 1.2rem; /* Ícone do tamanho adequado */
+    font-size: 1.2rem;
 }
+
 /* Formulário de Contato */
 #contact {
     background-color: rgba(45, 55, 72, 0.9);
     padding: 70px 30px;
     border-radius: 15px;
     max-width: 900px;
-    margin: 80px auto; /* Aumentando a margem superior para separar mais do topo */
+    margin: 80px auto;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* Título do formulário */
 #contact h3 {
-    margin-bottom: 50px; /* Aumentando o espaçamento entre o título e o formulário */
+    margin-bottom: 50px;
     font-size: 2.5rem;
     color: #fff;
     text-align: center;
 }
 
-/* Formulário */
 form {
     display: flex;
     flex-direction: column;
-    gap: 30px; /* Aumentando o espaçamento entre os campos */
+    gap: 30px;
     justify-content: center;
     width: 100%;
     max-width: 700px;
 }
 
-/* Containers de campo com a label ao lado */
 form .field {
-    display: flex;
-    align-items: center; /* Alinha label e campo de texto no centro verticalmente */
-    gap: 15px; /* Espaçamento entre a label e o input/textarea */
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 15px;
 }
 
-/* Estilo das labels */
 form label {
     font-size: 1.2rem;
     color: #fff;
-    width: 120px; /* Define uma largura fixa para as labels */
-    text-align: center; /* Alinha a label ao centro */
+    text-align: left;
+    font-weight: bold;
 }
 
-/* Estilo dos campos de texto (input e textarea) */
 form input,
 form textarea {
     padding: 18px;
@@ -291,22 +283,19 @@ form textarea {
     background-color: rgba(255, 255, 255, 0.1);
     transition: border 0.3s ease, box-shadow 0.3s ease;
     outline: none;
-    flex: 1; /* Faz o campo de texto ocupar o restante do espaço */
+    width: 100%;
 }
 
-/* Aumentar a área do campo de texto (textarea) */
 form textarea {
-    height: 150px; /* Aumenta a altura do textarea */
+    height: 150px;
 }
 
-/* Foco nos campos */
 form input:focus,
 form textarea:focus {
     border-color: rgba(43, 108, 176, 0.8);
     box-shadow: 0 0 8px rgba(43, 108, 176, 0.5);
 }
 
-/* Estilo do botão */
 form button {
     padding: 18px 25px;
     background-color: rgba(43, 108, 176, 0.8);
@@ -320,25 +309,21 @@ form button {
     text-align: center;
 }
 
-/* Hover no botão */
 form button:hover {
     background-color: rgba(43, 108, 176, 1);
     transform: scale(1.05);
 }
 
-/* Foco no botão */
 form button:focus {
     outline: none;
 }
 
-/* Estilo dos placeholders */
 form input::placeholder,
 form textarea::placeholder {
     color: rgba(255, 255, 255, 0.7);
     font-style: italic;
 }
 
-/* Foco nos placeholders */
 form input:focus::placeholder,
 form textarea:focus::placeholder {
     color: rgba(43, 108, 176, 0.8);
@@ -348,56 +333,118 @@ form textarea:focus::placeholder {
 @media (max-width: 768px) {
     form .field {
         flex-direction: column;
-        align-items: flex-start; /* Alinha label e campo de texto verticalmente */
+        align-items: flex-start;
     }
 
     form label {
         margin-bottom: 8px;
     }
 }
+
 header h1 a {
-    color: #fff; /* Define o texto como branco */
-    text-decoration: none; /* Remove o sublinhado do link */
+    color: #fff;
+    text-decoration: none;
 }
 
 header h1 a:hover {
-    color: #ddd; /* Cor mais clara ao passar o mouse (opcional) */
+    color: #ddd;
 }
+
 /* Frase de Impacto */
 .impacto {
-    font-size: 4rem; /* Frase bem maior */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
     line-height: 1.4;
     font-weight: 800;
-    color: #FF4500; /* Cor mais vibrante para a frase */
-    margin-bottom: 30px; /* Maior espaço abaixo */
+    color: #FF4500;
+    margin-bottom: 30px;
 }
 
 /* Seção Sobre Mim */
 .sobre-mim {
+    font-family: 'Lato', sans-serif;
     font-size: 1.4rem;
     line-height: 1.8;
     color: #fff;
-    max-width: 900px;
-    margin: 0 auto;
-    font-family: 'Arial', sans-serif;
 }
 
-/* Destaques na seção Sobre Mim */
 .destaque {
     font-weight: 700;
 }
 
 .destaque:not(.nome):not(.formacao) {
-    color: #319795; /* Cor azul para outras habilidades */
+    color: #319795;
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
     .impacto {
-        font-size: 2.8rem; /* Tamanho um pouco menor em telas pequenas */
+        font-size: 2.8rem;
     }
 
     .sobre-mim {
-        font-size: 1.2rem; /* Ajuste do texto */
+        font-size: 1.2rem;
     }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilo para o modal de sucesso */
+#successMessage {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#portfolio {
+    padding: 40px 20px;
+    background-color: #2d3748;
+    color: white;
+}
+
+.projeto {
+    margin-bottom: 40px;
+}
+
+.projeto h4 {
+    color: #319795;
+    margin-bottom: 10px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
 }
