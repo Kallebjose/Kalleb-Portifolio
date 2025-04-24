@@ -2,7 +2,7 @@
 particlesJS('particles-js', {
     particles: {
         number: {
-            value: 65,
+            value: 55,
             density: {
                 enable: true,
                 value_area: 650
@@ -76,4 +76,30 @@ particlesJS('particles-js', {
     },
     retina_detect: true
 });
+const form = document.getElementById('contactForm');
+const successMessage = document.getElementById('successMessage');
 
+form.addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+        method: form.method,
+        body: formData
+    })
+    .then(response => {
+        if (response.ok) {
+            form.style.display = 'none'; 
+            successMessage.style.display = 'block'; 
+
+           
+            setTimeout(() => {
+                successMessage.style.display = 'none';
+                form.style.display = 'block';
+            }, 15000); 
+        } else {
+            alert("Erro ao enviar a mensagem.");
+        }
+    })
+    .catch(error => alert("Erro ao enviar a mensagem: " + error));
+});
