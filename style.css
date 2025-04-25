@@ -118,8 +118,7 @@ section {
     text-align: center;
 }
 
-#about, #portfolio, #contact {
-    background-color: #2d3748;
+#about, #portfolio, #contact, #skills {
     border-radius: 10px;
     padding: 40px;
     margin: 20px auto;
