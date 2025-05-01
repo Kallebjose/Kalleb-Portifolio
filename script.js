@@ -76,33 +76,6 @@ particlesJS('particles-js', {
     },
     retina_detect: true
 });
-const form = document.getElementById('contactForm');
-const successMessage = document.getElementById('successMessage');
-
-form.addEventListener('submit', function(event) {
-    event.preventDefault(); 
-    const formData = new FormData(form);
-
-    fetch(form.action, {
-        method: form.method,
-        body: formData
-    })
-    .then(response => {
-        if (response.ok) {
-            form.style.display = 'none'; 
-            successMessage.style.display = 'block'; 
-
-           
-            setTimeout(() => {
-                successMessage.style.display = 'none';
-                form.style.display = 'block';
-            }, 15000); 
-        } else {
-            alert("Erro ao enviar a mensagem.");
-        }
-    })
-    .catch(error => alert("Erro ao enviar a mensagem: " + error));
-});
 const themeToggleButton = document.getElementById("theme-toggle"); // Pega o botão de alternância
 const body = document.body; // Pega o body para adicionar ou remover as classes
 const slider = themeToggleButton.querySelector(".toggle-btn-slider"); // Pega a bolinha dentro do botão
