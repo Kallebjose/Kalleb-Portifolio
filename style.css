@@ -117,11 +117,17 @@ section {
     text-align: center;
 }
 
-#about, #portfolio, #contact, #skills {
+#about, #portfolio, #contact{
     border-radius: 0.625rem; /* 10px */
     padding: 2.5rem; /* 40px */
     margin: 1.25rem auto; /* 20px auto */
     max-width: 50rem; /* 800px */
+}
+#skills{
+    border-radius: 0.625rem; /* 10px */
+    padding: 2.5rem; /* 40px */
+    margin: 1.25rem auto; /* 20px auto */
+    max-width: 60rem; /* 800px */
 }
 #about h1 {
     color: #ffffff;
@@ -457,7 +463,7 @@ html {
 }
 
 .modal-content {
-  background-color: white;
+  background-color: #dadada;
   margin: 15% auto;
   padding: 20px;
   border-radius: 8px;
@@ -511,7 +517,7 @@ html {
 .modal-right p {
   font-size: 1rem;
   line-height: 1.5;
-  color: #2d3748;
+  color: #1a202c;
 }
 
 .botoes {

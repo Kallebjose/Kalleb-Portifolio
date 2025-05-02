@@ -75,6 +75,16 @@
             <p>Kotlin</p>
             <img src="./logos/Kotlin.png" alt="KotlinLogo">
         </div>
+
+        <div class="box">
+          <p>Flutter</p>
+          <img src="./logos/flutter.svg" alt="FlutterLogo">
+      </div>
+
+      <div class="box">
+        <p>Dart</p>
+        <img src="./logos/dart.svg" alt="DartLogo">
+    </div>
     
         <div class="box">
             <p>GitHub</p>
@@ -108,18 +118,18 @@
     </section>
 
     <section id="portfolio">
-      <h3 class="portfolio-title">Portfólio</h3>
+      <h3 class="portfolio-title">Projetos</h3>
       <div class="portfolio-grid">
-    
+
         <div class="projeto-card" onclick="openModal('projeto1')">
           <div class="projeto-thumb">
-            <img class="projeto-fundo" src="sua-foto.jpg" alt="Projeto 1">
+            <img class="projeto-fundo" src="imgs/listadetarefas.png" alt="listadetarefas">
             <div class="projeto-info">
-              <h4>DesconectaGame</h4>
+              <h4>Lista de Tarefas </h4>
               <div class="tech-icons">
-                <img src="logos/Kotlin.png" alt="Kotlin" width="32" height="32">
-                <img src="." alt="Firebase" width="32" height="32">
-                <img src="." alt="Cloud" width="32" height="32">
+                <img src="logos/flutter.svg" alt="Flutter" width="32" height="32">
+                <img src="logos/dart.svg" alt="Dart" width="32" height="32">
+                <img src="logos/AndroidStudio.png" alt="AndroidStudio" width="32" height="32">
               </div>
             </div>
           </div>
@@ -131,21 +141,79 @@
             <div class="modal-left">
               <iframe src="." frameborder="0" allowfullscreen></iframe>
               <div class="botoes">
-                <a href=".k" class="botao" target="_blank">⬇️ Baixar APK</a>
+                <a href="." class="botao" target="_blank">⬇️ Baixar APK</a>
                 <a href="." class="botao" target="_blank">💻 Ver no GitHub</a>
               </div>
             </div>
             
             <div class="modal-right">
-              <h4>DesconectaGame</h4>
+              <h4>📋 Lista de Tarefas – Flutter/Dart</h4>
               <p>
-                O DesconectaGame é um aplicativo mobile criado para ajudar as pessoas a reduzirem o uso do celular com mecânicas de RPG. Possui sistema de login com Room e Firebase, desafios diários, e recompensas. Projeto pessoal focado em usabilidade e comportamento digital.
+                Este é um aplicativo de Lista de Tarefas (To-Do List) desenvolvido com Flutter e Dart, usando o Android Studio como IDE. O app permite criar, editar, excluir e marcar tarefas como concluídas, com salvamento local automático usando SharedPreferences. Conta também com alternância de tema claro/escuro, proporcionando uma experiência moderna e personalizada.
+                <br><br>
+                <strong>🚀 Funcionalidades:</strong><br>
+                ✅ Adição, edição e exclusão de tarefas com confirmação<br>
+                ☑️ Marcação de tarefas como concluídas<br>
+                🌙 Alternância entre tema claro e escuro<br>
+                💾 Salvamento local automático com persistência de dados<br>
+                📱 Interface responsiva com widgets nativos do Flutter
+                <br><br>
+                <strong>🛠️ Tecnologias Utilizadas:</strong><br>
+                Flutter, Dart, Android Studio, SharedPreferences, Material Design, Stateful Widgets, ThemeData, SnackBar.
+                <br><br>
+                <strong>🎯 Objetivo:</strong><br>
+                Desenvolver uma aplicação intuitiva com boas práticas em Flutter, controle de estado com <code>setState()</code>, e persistência de dados local.
               </p>
+            </div>
+            
+          </div>
+        </div>
+        <div class="projeto-card" onclick="openModal('projeto2')">
+          <div class="projeto-thumb">
+            <img class="projeto-fundo" src="imgs/portifolio.png" alt="listadetarefas">
+            <div class="projeto-info">
+              <h4>Portifólio</h4>
+              <div class="tech-icons">
+                <img src="logos/HTML5.png" alt="HTML5" width="32" height="32">
+                <img src="logos/CSS3.png" alt="CSS3" width="32" height="32">
+                <img src="logos/JS.png" alt="JavaScript" width="32" height="32">
+              </div>
             </div>
           </div>
         </div>
-    
-    
+            <div id="projeto2" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('projeto1')">&times;</span>
+            
+            <div class="modal-left">
+              <iframe src="." frameborder="0" allowfullscreen></iframe>
+              <div class="botoes">
+                <a href="." class="botao" target="_blank">⬇️ Baixar .zip</a>
+                <a href="." class="botao" target="_blank">💻 Ver no GitHub</a>
+              </div>
+            </div>
+            
+            <div class="modal-right">
+              <h4>🎨 Portfólio Interativo</h4>
+              <p>
+                Este projeto tem como principal objetivo criar um portfólio com uma interface interativa e visualmente cativante, com recursos que proporcionam uma experiência de usuário dinâmica e personalizada. Ele é composto por duas funcionalidades chave: um sistema de efeito de partículas interativo e uma alternância de temas (modo claro/escuro) que oferece uma navegação fluida e customizável.
+                <br><br>
+                <strong>🚀 Funcionalidades:</strong><br>
+                ✨ <strong>Efeito de Partículas Animadas:</strong> Partículas interativas criadas com a biblioteca particles.js, reagindo ao movimento do mouse e proporcionando um fundo dinâmico e moderno.<br>
+                🌙 <strong>Alternância de Tema Claro/Escuro:</strong> Alternância intuitiva entre temas claro e escuro, com transições suaves e persistência da escolha através do <code>localStorage</code>.<br>
+                💬 <strong>Modais Interativos:</strong> Modais interativos com funcionalidade de fechar ao clicar fora da janela, melhorando a usabilidade e mantendo a navegação limpa.
+                <br><br>
+                <strong>🛠️ Tecnologias Utilizadas:</strong><br>
+                HTML5, CSS3, JavaScript (ES6), <code>particles.js</code>, <code>localStorage</code>.
+                <br><br>
+                <strong>🎯 Objetivo:</strong><br>
+                Criar uma interface moderna e atraente, com personalização de tema e efeitos dinâmicos, proporcionando uma experiência rica, fluida e personalizada para o usuário.
+              </p>
+            </div>
+            
+          </div>
+        </div>
+
       </div>
     </section>
     
