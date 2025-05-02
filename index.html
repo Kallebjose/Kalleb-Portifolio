@@ -108,24 +108,48 @@
     </section>
 
     <section id="portfolio">
-        <h3>Portfólio</h3>
-        <div class="projeto">
-            <h4>Gerador de Documentos Word via Excel (VBA)</h4>
-            <p>Automação que permite gerar documentos Word personalizados a partir de dados em planilhas.</p>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/SEU_VIDEO_1" frameborder="0" allowfullscreen></iframe>
+      <h3 class="portfolio-title">Portfólio</h3>
+      <div class="portfolio-grid">
+    
+        <div class="projeto-card" onclick="openModal('projeto1')">
+          <div class="projeto-thumb">
+            <img class="projeto-fundo" src="sua-foto.jpg" alt="Projeto 1">
+            <div class="projeto-info">
+              <h4>DesconectaGame</h4>
+              <div class="tech-icons">
+                <img src="logos/Kotlin.png" alt="Kotlin" width="32" height="32">
+                <img src="." alt="Firebase" width="32" height="32">
+                <img src="." alt="Cloud" width="32" height="32">
+              </div>
             </div>
+          </div>
         </div>
-
-        <div class="projeto">
-            <h4>Conversor Word para PDF (Excel VBA)</h4>
-            <p>Automação que converte documentos Word em PDF diretamente via Excel.</p>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/SEU_VIDEO_2" frameborder="0" allowfullscreen></iframe>
+            <div id="projeto1" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('projeto1')">&times;</span>
+            
+            <div class="modal-left">
+              <iframe src="." frameborder="0" allowfullscreen></iframe>
+              <div class="botoes">
+                <a href=".k" class="botao" target="_blank">⬇️ Baixar APK</a>
+                <a href="." class="botao" target="_blank">💻 Ver no GitHub</a>
+              </div>
             </div>
+            
+            <div class="modal-right">
+              <h4>DesconectaGame</h4>
+              <p>
+                O DesconectaGame é um aplicativo mobile criado para ajudar as pessoas a reduzirem o uso do celular com mecânicas de RPG. Possui sistema de login com Room e Firebase, desafios diários, e recompensas. Projeto pessoal focado em usabilidade e comportamento digital.
+              </p>
+            </div>
+          </div>
         </div>
+    
+    
+      </div>
     </section>
-    </section>
+    
+    
     <section id="contactme">
         <h1>Contatos</h1>
     <div class="contact">

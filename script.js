@@ -107,3 +107,20 @@ themeToggleButton.addEventListener("click", () => {
         slider.style.transform = 'translateX(0)'; // Move a bolinha para a esquerda
     }
 });
+// Abre a modal
+function openModal(id) {
+    document.getElementById(id).style.display = "block";
+  }
+  
+  // Fecha a modal
+  function closeModal(id) {
+    document.getElementById(id).style.display = "none";
+  }
+  
+  // Fecha a modal quando clica fora dela
+  window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+      document.querySelectorAll('.modal').forEach(modal => modal.style.display = "none");
+    }
+  }
+  
