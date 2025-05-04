@@ -125,12 +125,16 @@
             <p>JavaScript</p>
             <img src="./logos/JS.png" alt="JSLogo">
         </div>
+        <div class="box">
+          <p>VBA</p>
+          <img src="./logos/vba.svg" alt="VBALogo">
+      </div>
     </section>
 
     <section id="portfolio">
       <h1 class="portfolio-title">Projetos</h1>
-      <div class="portfolio-grid">
 
+      <div class="portfolio-grid">
         <div class="projeto-card" onclick="openModal('projeto1')">
           <div class="projeto-thumb">
             <img class="projeto-fundo" src="imgs/listadetarefas.png" alt="listadetarefas">
@@ -273,7 +277,104 @@
             
           </div>
         </div>
-      
+
+        <div class="projeto-card" onclick="openModal('projeto4')">
+          <div class="projeto-thumb">
+            <img class="projeto-fundo" src="imgs/excelogimage.png" alt="conversor">
+            <div class="projeto-info">
+              <h4>Conversor de Word para PDF | VBA/Excel</h4>
+              <div class="tech-icons">
+                <img src="logos/vba.svg" alt="VBA" width="32" height="32">
+                <img src="logos/excel.svg" alt="Excel" width="32" height="32">
+              </div>
+            </div>
+          </div>
+        </div>
+            <div id="projeto4" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('projeto4')">&times;</span>
+            
+            <div class="modal-left">
+              <iframe src="." frameborder="0" allowfullscreen></iframe>
+              <div class="botoes">
+                <a href="." class="botao" target="_blank">⬇️ Baixar .zip</a>
+                <a href="." class="botao" target="_blank">💻 Ver no GitHub</a>
+              </div>
+            </div>
+            
+            <div class="modal-right">
+              <h4>📄 Conversor de Word para PDF – VBA/Excel</h4>
+              <p>
+                Este projeto tem como principal objetivo automatizar a conversão de documentos Word (.doc e .docx) em arquivos PDF, utilizando o Excel como interface principal. A solução foi desenvolvida com foco em simplicidade e eficiência, oferecendo recursos de conversão em lote, barra de progresso visual e gerenciamento inteligente de arquivos, ideal para ambientes corporativos e educacionais.
+                <br><br>
+                <strong>🚀 Funcionalidades:</strong><br>
+                ✅ <strong>Conversão em Lote:</strong> Conversão automática de múltiplos arquivos Word para PDF de uma só vez.<br>
+                📂 <strong>Seleção de Pastas:</strong> Botões integrados para escolha de pastas de origem e destino via explorador de arquivos.<br>
+                🟩 <strong>Barra de Progresso:</strong> Progresso visual integrado à planilha do Excel com atualização percentual em tempo real.<br>
+                🧠 <strong>Gerenciamento Inteligente:</strong> Contagem automática de arquivos e tratamento de erros para evitar falhas durante a conversão.<br>
+                🔒 <strong>Modo Somente Leitura:</strong> Garantia de que os documentos originais não serão alterados durante o processo.
+                <br><br>
+                <strong>🛠️ Tecnologias Utilizadas:</strong><br>
+                VBA (Visual Basic for Applications), Excel (Shapes, FileDialog, Worksheets), Microsoft Word Automation, <code>FileSystemObject</code>.
+                <br><br>
+                <strong>🎯 Objetivo:</strong><br>
+                Agilizar e simplificar o processo de conversão de documentos Word para PDF, oferecendo uma solução visualmente integrada, confiável e acessível até mesmo para usuários sem conhecimentos técnicos.
+              </p>
+            </div>            
+            
+          </div>
+        </div>
+
+        <div class="projeto-card" onclick="openModal('projeto5')">
+          <div class="projeto-thumb">
+            <img class="projeto-fundo" src="imgs/excelogimage.png" alt="listadetarefas">
+            <div class="projeto-info">
+              <h4>Gerador de Word | VBA/Excel</h4>
+              <div class="tech-icons">
+                <img src="logos/vba.svg" alt="VBA" width="32" height="32">
+                <img src="logos/excel.svg" alt="Excel" width="32" height="32">
+                <img src="logos/word.svg" alt="Word" width="32" height="32">
+              </div>
+            </div>
+          </div>
+        </div>
+            <div id="projeto5" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('projeto5')">&times;</span>
+            
+            <div class="modal-left">
+              <iframe src="." frameborder="0" allowfullscreen></iframe>
+              <div class="botoes">
+                <a href="." class="botao" target="_blank">⬇️ Baixar .zip</a>
+                <a href="." class="botao" target="_blank">💻 Ver no GitHub</a>
+              </div>
+            </div>
+            
+            <div class="modal-right">
+              <h4>📋 Gerador de Word – VBA/Excel</h4>
+              <p>
+                Este projeto foi desenvolvido com o objetivo de automatizar a criação de documentos Word personalizados para múltiplos destinatários, utilizando um modelo pré-formatado. Com base em uma planilha do Excel, o sistema substitui dinamicamente os campos do modelo com informações específicas de cada linha, gerando documentos de forma prática, rápida e organizada.
+                <br><br>
+                <strong>🚀 Funcionalidades:</strong><br>
+                ✅ <strong>Geração Automática de Documentos:</strong> Criação de cartas personalizadas em Word com base em dados da planilha.<br>
+                📂 <strong>Seleção de Pastas:</strong> Interface intuitiva para escolha do modelo Word e da pasta de destino dos arquivos gerados.<br>
+                📝 <strong>Preenchimento de Placeholders:</strong> Substituição automática de campos no documento por dados personalizados.<br>
+                📊 <strong>Validação e Tratamento de Erros:</strong> Verificação de campos obrigatórios e gerenciamento de inconsistências durante o processo.<br>
+                💾 <strong>Nomeação Personalizada:</strong> Salvamento automático dos arquivos com nomes únicos e informativos.<br>
+                🔒 <strong>Segurança dos Arquivos:</strong> Preservação dos documentos originais, com geração de cópias personalizadas.
+                <br><br>
+                <strong>🛠️ Tecnologias Utilizadas:</strong><br>
+                VBA (Visual Basic for Applications), Excel (Planilhas e Interface), Microsoft Word Automation, <code>FileDialog</code>.
+                <br><br>
+                <strong>🎯 Objetivo:</strong><br>
+                Facilitar a geração em massa de documentos Word personalizados em ambientes corporativos, com foco em agilidade, personalização e facilidade de uso. A interface baseada no Excel permite controle visual e acesso intuitivo, mesmo para usuários não técnicos.
+              </p>
+            </div>
+            
+            
+          </div>
+        </div>
+
 
       </div>
     </section>
