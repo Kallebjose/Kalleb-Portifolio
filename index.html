@@ -77,15 +77,25 @@
         </div>
 
         <div class="box">
-          <p>Flutter</p>
-          <img src="./logos/flutter.svg" alt="FlutterLogo">
-      </div>
+            <p>Flutter</p>
+            <img src="./logos/flutter.svg" alt="FlutterLogo">
+        </div>
 
-      <div class="box">
-        <p>Dart</p>
-        <img src="./logos/dart.svg" alt="DartLogo">
-    </div>
-    
+        <div class="box">
+            <p>Dart</p>
+            <img src="./logos/dart.svg" alt="DartLogo">
+        </div>
+
+        <div class="box">
+            <p>Android Studio</p>
+            <img src="./logos/AndroidStudio.png" alt="AndroidStudioLogo">
+        </div>
+
+        <div class="box">
+          <p>Android SDK</p>
+          <img src="./logos/androidsdk.svg" alt="AndroidSDKLogo">
+        </div>
+          
         <div class="box">
             <p>GitHub</p>
             <img src="./logos/Github.png" alt="GitHubLogo">
@@ -118,14 +128,14 @@
     </section>
 
     <section id="portfolio">
-      <h3 class="portfolio-title">Projetos</h3>
+      <h1 class="portfolio-title">Projetos</h1>
       <div class="portfolio-grid">
 
         <div class="projeto-card" onclick="openModal('projeto1')">
           <div class="projeto-thumb">
             <img class="projeto-fundo" src="imgs/listadetarefas.png" alt="listadetarefas">
             <div class="projeto-info">
-              <h4>Lista de Tarefas </h4>
+              <h4>Lista de Tarefas | Flutter/Dart</h4>
               <div class="tech-icons">
                 <img src="logos/flutter.svg" alt="Flutter" width="32" height="32">
                 <img src="logos/dart.svg" alt="Dart" width="32" height="32">
@@ -147,7 +157,7 @@
             </div>
             
             <div class="modal-right">
-              <h4>📋 Lista de Tarefas – Flutter/Dart</h4>
+              <h4>📋 Lista de Tarefas | Flutter/Dart</h4>
               <p>
                 Este é um aplicativo de Lista de Tarefas (To-Do List) desenvolvido com Flutter e Dart, usando o Android Studio como IDE. O app permite criar, editar, excluir e marcar tarefas como concluídas, com salvamento local automático usando SharedPreferences. Conta também com alternância de tema claro/escuro, proporcionando uma experiência moderna e personalizada.
                 <br><br>
@@ -168,7 +178,57 @@
             
           </div>
         </div>
+
         <div class="projeto-card" onclick="openModal('projeto2')">
+          <div class="projeto-thumb">
+            <img class="projeto-fundo" src="imgs/listadetarefaskt.png" alt="listadetarefaskt">
+            <div class="projeto-info">
+              <h4>Lista de Tarefas | Kotlin/Android</h4>
+              <div class="tech-icons">
+                <img src="logos/Kotlin.png" alt="Kotlin" width="32" height="32">
+                <img src="logos/AndroidStudio.png" alt="AndroidStudio" width="32" height="32">
+                <img src="logos/androidsdk.svg" alt="AndroidSDK" width="32" height="32">
+              </div>
+            </div>
+          </div>
+        </div>
+            <div id="projeto2" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('projeto2')">&times;</span>
+            
+            <div class="modal-left">
+              <iframe src="imgs/listadetarefaskt.png" frameborder="0" allowfullscreen></iframe>
+              <div class="botoes">
+                <a href="." class="botao" target="_blank">⬇️ Baixar .zip</a>
+                <a href="." class="botao" target="_blank">💻 Ver no GitHub</a>
+              </div>
+            </div>
+            
+            <div class="modal-right">
+              <h4>📋 Lista de Tarefas – Kotlin/Android</h4>
+              <p>
+                Este é um aplicativo de Lista de Tarefas (To-Do List) desenvolvido com Kotlin para Android, utilizando o Android Studio como IDE. O app permite adicionar, editar, excluir e marcar tarefas como concluídas, com salvamento local persistente usando SharedPreferences. Também conta com alternância entre tema claro e escuro, oferecendo uma experiência moderna, leve e personalizada.
+                <br><br>
+                <strong>🚀 Funcionalidades:</strong><br>
+                ✅ Adição, edição e exclusão de tarefas com confirmação<br>
+                ☑️ Marcação de tarefas como concluídas, com visualização de texto riscado<br>
+                🌙 Alternância entre tema claro e escuro com persistência<br>
+                💾 Salvamento local automático usando SharedPreferences<br>
+                📱 Interface responsiva com RecyclerView e elementos nativos do Android
+                <br><br>
+                <strong>🛠️ Tecnologias Utilizadas:</strong><br>
+                Kotlin, Android Studio, SharedPreferences, RecyclerView, AlertDialog, Material Design, AppCompatDelegate, Gson, XML Layouts
+                <br><br>
+                <strong>🎯 Objetivo:</strong><br>
+                Desenvolver uma aplicação prática e funcional para organização de tarefas, aplicando boas práticas em Android com Kotlin, controle de estado local, persistência de dados, e personalização de interface com alternância de temas.
+              </p>
+            </div>
+            
+            
+          </div>
+        </div>
+
+        <div class="projeto-card" onclick="openModal('projeto3')">
           <div class="projeto-thumb">
             <img class="projeto-fundo" src="imgs/portifolio.png" alt="listadetarefas">
             <div class="projeto-info">
@@ -181,9 +241,9 @@
             </div>
           </div>
         </div>
-            <div id="projeto2" class="modal">
+            <div id="projeto3" class="modal">
           <div class="modal-content">
-            <span class="close" onclick="closeModal('projeto1')">&times;</span>
+            <span class="close" onclick="closeModal('projeto3')">&times;</span>
             
             <div class="modal-left">
               <iframe src="." frameborder="0" allowfullscreen></iframe>
@@ -213,6 +273,7 @@
             
           </div>
         </div>
+      
 
       </div>
     </section>

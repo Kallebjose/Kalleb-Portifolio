@@ -129,8 +129,13 @@ section {
     margin: 1.25rem auto; /* 20px auto */
     max-width: 60rem; /* 800px */
 }
+#skills h1{
+    color: #ffffff;
+    font-size: 2rem;
+}
 #about h1 {
     color: #ffffff;
+    font-size: 2rem;
 }
 
 /* Botões de redes sociais */
@@ -372,13 +377,18 @@ html {
   background-color: transparent;
   color: #2d3748;
 }
+#portfolio h1{
+    font-size: 2.5rem;
+  color: #ffffff;
+  }
 
 .portfolio-title {
   text-align: center;
   margin-bottom: 2rem;
   font-size: 2rem;
-  color: #319795;
+  color: #ffffff;
 }
+
 
 .portfolio-grid {
   display: flex;
@@ -386,6 +396,7 @@ html {
   gap: 2rem;
   justify-content: center;
 }
+
 
 .projeto-card {
   width: 100%;
@@ -410,6 +421,9 @@ html {
   filter: blur(4px);
   transition: transform 0.3s ease;
 }
+.projeto-thumb img:hover {
+    filter: none; 
+  }
 
 .projeto-info {
   position: absolute;
@@ -645,7 +659,7 @@ html {
     color: #e2e8f0;
     font: bold;
     font-family: 'Lato', sans-serif;
-    font-size: 1.125rem; /* 18px */
+    font-size: 1rem;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -954,7 +968,7 @@ body.theme-light .btn-secondary:hover, body.theme-light .box {
 }
 
 body.theme-light #skills h1 {
-    color: #fff;  
+    color: #fff; 
 }
 body.theme-light .box p {
     color: #E2E8F0; 
@@ -1080,6 +1094,7 @@ body.theme-light #homek a {
 }
 #contactme{
     color: #fff;
+    font-size: 2rem;
 }
 body.theme-light .contact h1 {
     margin-top: 0.25rem;
