@@ -535,6 +535,7 @@ html {
 }
 
 .botoes {
+  justify-content: center;
   margin-top: 0.75rem;
   display: flex;
   gap: 1rem;
