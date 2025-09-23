@@ -111,6 +111,18 @@ header nav ul li a:hover {
     border: none;
 }
 
+/*Rodapé*/
+footer {
+    color: #c0c0c0;             
+    background-color: #1a202c;  
+    text-align: center;          
+    padding: 20px 0;             
+    font-size: 14px;            
+    font-family: Arial, sans-serif; 
+    border-top: 3px solid #319795;
+}
+
+
 /* Seções Gerais */
 section {
     padding: 3.75rem 2.5vw; /* 60px 2.5% */
@@ -1110,3 +1122,12 @@ body.theme-light   .contact p{
     overflow-x: hidden;
     position: relative;
   }
+body.theme-light footer {
+    color: #1a202c;
+    background-color: #7684a1;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    border-top: 3px solid #1a202c;
+}
