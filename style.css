@@ -676,7 +676,7 @@ html {
 
 .box img {
     width: 5rem; /* 80px */
-    height: auto;
+    height: 5rem;
 }
 
 .box p {
