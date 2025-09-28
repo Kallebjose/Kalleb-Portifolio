@@ -41,7 +41,7 @@
             </div>
             <div class="buttons">
                 <a href="#about" class="btn btn-primary">Sobre Mim</a>
-                <a href="KallebSousa.pdf" class="btn btn-secondary" download>Download CV</a>
+                <a href="KallebSousaCV.pdf" class="btn btn-secondary" download>Download CV</a>
             </div>
         </div>
     </div>
@@ -54,19 +54,19 @@
         </div>
     </section>
     
-    <section id="about">
-        <h1>Sobre mim</h1>
-        <p>Sou o <span class="destaque">Kalleb Sousa</span>, formado em <span class="destaque">Técnico em Informática</span> e atualmente estudante de <span class="destaque">Análise e Desenvolvimento de Sistemas</span> e <span class="destaque">Desenvolvimento Mobile</span>. Apaixonado por tecnologia, dados e boas ideias, estou construindo minha carreira com foco no desenvolvimento de aplicativos Android nativos usando <span class="destaque">Kotlin</span> e <span class="destaque">Android Studio</span>, com experiência em <span class="destaque">Room</span>, <span class="destaque">Firebase</span> e atualmente aprofundando meus conhecimentos em <span class="destaque">AWS</span>. Também tenho interesse em <span class="destaque">backend</span>, buscando entender a integração de servidores, bancos de dados e APIs para criar soluções robustas e escaláveis para sistemas e aplicações.</p>
+   <section id="about">
+    <h1>Sobre mim</h1>
+    <p>Sou o <span class="destaque">Kalleb Sousa</span>, formado em <span class="destaque">Técnico em Informática</span> e atualmente estudante de <span class="destaque">Análise e Desenvolvimento de Sistemas</span> e <span class="destaque">Desenvolvimento Mobile</span>. Apaixonado por tecnologia, dados e boas ideias, estou construindo minha carreira com foco no desenvolvimento de aplicativos Android nativos usando <span class="destaque">Kotlin</span> e <span class="destaque">Android Studio</span>, com experiência em <span class="destaque">Room</span>, <span class="destaque">Firebase</span> e atualmente aprofundando meus conhecimentos em <span class="destaque">AWS</span>. Também tenho interesse em <span class="destaque">backend</span>, buscando entender a integração de servidores, bancos de dados e APIs para criar soluções robustas e escaláveis para sistemas e aplicações.</p>
 
-        <p>Minha jornada também me levou a adquirir conhecimentos em <span class="destaque">HTML</span>, <span class="destaque">CSS</span> e <span class="destaque">JavaScript</span>, que me ajudam a compreender a estrutura e a lógica por trás das interfaces de usuário, melhorando a experiência do usuário final. Além disso, sou apaixonado por análise de dados, utilizando ferramentas como <span class="destaque">Excel avançado</span> e <span class="destaque">Power BI</span> para transformar números em decisões e gerar insights valiosos, especialmente durante minha atuação nas áreas de HRBP e Talent Acquisition, onde me especializei em otimizar processos e melhorar a eficiência organizacional.</p>
-         
-        <p>Durante essas trajetórias, desenvolvi habilidades interpessoais como comunicação eficaz, trabalho em equipe, liderança e gestão de projetos, sempre buscando colaborar de forma positiva e produtiva no ambiente de trabalho.</p>
-        
-        <p>Sou movido por curiosidade, café e desafios grandes. Quando não estou codando, gosto de explorar dados, automatizar processos e criar soluções inovadoras que tornam a vida mais simples e eficiente. Trabalho de forma organizada, divido minhas tarefas em partes, e sempre uso o GitHub para acompanhar minha evolução.</p>
-        
-        <p>Desenvolver, pra mim, é mais do que programar: é sobre resolver, criar e se divertir no processo.</p>
-        
-    </section>
+    <p>Minha jornada também me levou a adquirir conhecimentos em <span class="destaque">HTML</span>, <span class="destaque">CSS</span> e <span class="destaque">JavaScript</span>, que me ajudam a compreender a estrutura e a lógica por trás das interfaces de usuário, melhorando a experiência do usuário final. Além disso, sou apaixonado por análise de dados e automação utilizando <span class="destaque">Python</span>, com bibliotecas como <span class="destaque">Pandas</span>, <span class="destaque">Matplotlib</span> e <span class="destaque">OpenPyXL</span>, além de ferramentas como <span class="destaque">Excel avançado</span> e <span class="destaque">Power BI</span>, transformando números em decisões e gerando insights valiosos.</p>
+     
+    <p>Durante essas trajetórias, desenvolvi habilidades interpessoais como comunicação eficaz, trabalho em equipe, liderança e gestão de projetos, sempre buscando colaborar de forma positiva e produtiva no ambiente de trabalho.</p>
+    
+    <p>Sou movido por curiosidade, café e desafios grandes. Quando não estou codando, gosto de explorar dados, automatizar processos e criar soluções inovadoras que tornam a vida mais simples e eficiente. Trabalho de forma organizada, divido minhas tarefas em partes, e sempre uso o GitHub para acompanhar minha evolução.</p>
+    
+    <p>Desenvolver, pra mim, é mais do que programar: é sobre resolver, criar e se divertir no processo.</p>
+</section>
+
 
     <section id="skills">
         <h1>Habilidades</h1>
@@ -95,6 +95,21 @@
           <p>Android SDK</p>
           <img src="./logos/androidsdk.svg" alt="AndroidSDKLogo">
         </div>
+
+        <div class="box">
+          <p>Python</p>
+          <img src="./logos/python.svg" alt="PythonLogo">
+        </div>
+
+        <div class="box">
+          <p>Pandas</p>
+          <img src="./logos/pandas.svg" alt="PandasLogo">
+        </div>
+
+         <div class="box">
+          <p>Matplotlib</p>
+          <img src="./logos/matplotlib.svg" alt="MatplotlibLogo">
+         </div>
           
         <div class="box">
             <p>GitHub</p>
@@ -133,8 +148,56 @@
 
     <section id="portfolio">
       <h1 class="portfolio-title">Projetos</h1>
-
       <div class="portfolio-grid">
+
+          <div class="projeto-card" onclick="openModal('projeto00')">
+            <div class="projeto-thumb">
+              <img class="projeto-fundo" src="imgs/ExPy.jpg" alt="Análise de Vendas Python/Excel">
+              <div class="projeto-info">
+                <h4>Análise de Vendas | Python/Excel</h4>
+                <div class="tech-icons">
+                  <img src="logos/python.svg" alt="Python" width="32" height="32">
+                  <img src="logos/pandas.svg" alt="Pandas" width="32" height="32">
+                  <img src="logos/matplotlib.svg" alt="Matplotlib" width="32" height="32">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="projeto00" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('projeto00')">&times;</span>
+              
+              <div class="modal-left">
+                <iframe src="imgs/Dados.png" frameborder="110" allowfullscreen></iframe>
+                <div class="botoes">
+                  <a href="." class="botao" target="_blank">💻 Ver no GitHub</a>
+                </div>
+              </div>
+              
+              <div class="modal-right">
+                <h4>📊 Análise de Vendas | Python/Excel</h4>
+                <p>
+                  Projeto de análise de dados com Python, usando Excel como base. Realiza leitura, limpeza e agregação de dados, gerando totais por produto, categoria e região, gráficos automáticos e resumo consolidado em Excel.
+                  <br><br>
+                  <strong>🚀 Funcionalidades:</strong><br>
+                  📈 Leitura e tratamento de dados<br>
+                  🧮 Cálculo de totais por produto, categoria e região<br>
+                  📊 Geração de gráficos automáticos<br>
+                  💾 Exportação de resumo consolidado em Excel
+                  <br><br>
+                  <strong>🛠️ Tecnologias Utilizadas:</strong><br>
+                  Python, Pandas, Matplotlib, OpenPyXL, Seaborn
+                  <br><br>
+                  <strong>🎯 Objetivo:</strong><br>
+                  Transformar dados em insights visuais e relatórios automatizados de forma prática e eficiente.
+                </p>
+              </div>
+              
+            </div>
+          </div>
+
+
         <div class="projeto-card" onclick="openModal('projeto1')">
           <div class="projeto-thumb">
             <img class="projeto-fundo" src="imgs/listadetarefas.png" alt="listadetarefas">
@@ -143,7 +206,7 @@
               <div class="tech-icons">
                 <img src="logos/flutter.svg" alt="Flutter" width="32" height="32">
                 <img src="logos/dart.svg" alt="Dart" width="32" height="32">
-                <img src="logos/AndroidStudio.svg" alt="AndroidStudio" width="32" height="32">
+                <img src="logos/Android_Studio.svg" alt="AndroidStudio" width="32" height="32">
               </div>
             </div>
           </div>
@@ -189,7 +252,7 @@
               <h4>Lista de Tarefas | Kotlin/Android</h4>
               <div class="tech-icons">
                 <img src="logos/Kotlin.svg" alt="Kotlin" width="32" height="32">
-                <img src="logos/AndroidStudio.svg" alt="AndroidStudio" width="32" height="32">
+                <img src="logos/Android_Studio.svg" alt="AndroidStudio" width="32" height="32">
                 <img src="logos/androidsdk.svg" alt="AndroidSDK" width="32" height="32">
               </div>
             </div>
@@ -277,7 +340,7 @@
 
         <div class="projeto-card" onclick="openModal('projeto4')">
           <div class="projeto-thumb">
-            <img class="projeto-fundo" src="imgs/excelogimage.png" alt="conversor">
+            <img class="projeto-fundo" src="imgs/Excell.png" alt="conversor">
             <div class="projeto-info">
               <h4>Conversor de Word para PDF | VBA/Excel</h4>
               <div class="tech-icons">
@@ -323,7 +386,7 @@
 
         <div class="projeto-card" onclick="openModal('projeto5')">
           <div class="projeto-thumb">
-            <img class="projeto-fundo" src="imgs/excelogimage.png" alt="listadetarefas">
+            <img class="projeto-fundo" src="imgs/Excell.png" alt="listadetarefas">
             <div class="projeto-info">
               <h4>Gerador de Word | VBA/Excel</h4>
               <div class="tech-icons">
