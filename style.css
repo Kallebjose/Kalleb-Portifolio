@@ -65,7 +65,22 @@ header nav ul li a {
 header nav ul li a:hover {
     color: #63b3ed;
 }
+.nav-links a.active {
+    color: #319795;
+    border-bottom: 2px solid #319795;
+}
 
+.nav-links a:hover {
+    color: #319795;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 100px;
+}
 /* Seção Principal (Hero) */
 .hero {
     display: flex;
@@ -1130,4 +1145,19 @@ body.theme-light footer {
     font-size: 14px;
     font-family: Arial, sans-serif;
     border-top: 3px solid #1a202c;
+}
+body.theme-light .nav-links a {
+    color: #00ffd1; 
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+body.theme-light .nav-links a:hover {
+    color: #00ffd1; 
+}
+
+body.theme-light .nav-links a.active {
+    color: #00ffd1; 
+    border-bottom: 2px solid #00ffd1; /* indicador ativo */
 }

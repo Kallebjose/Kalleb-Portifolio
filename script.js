@@ -123,4 +123,29 @@ function openModal(id) {
       document.querySelectorAll('.modal').forEach(modal => modal.style.display = "none");
     }
   }
-  
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-links a");
+
+window.addEventListener("scroll", () => {
+  let current = "";
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    if (scrollY >= sectionTop - sectionHeight / 2.5) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove("active");
+    if (link.getAttribute("href").includes(current)) {
+      link.classList.add("active");
+    }
+  });
+
+  // Garante que "Contato" fique ativo no final da página
+  if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 50) {
+    navLinks.forEach(link => link.classList.remove("active"));
+    document.querySelector('.nav-links a[href="#contactme"]').classList.add("active");
+  }
+});
