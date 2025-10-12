@@ -151,9 +151,16 @@
 
     <section id="portfolio">
       <h1 class="portfolio-title">Projetos</h1>
+              <div class="portfolio-filters">
+          <button onclick="filterProjects('all')">Todos</button>
+          <button onclick="filterProjects('mobile')">Mobile</button>
+          <button onclick="filterProjects('frontend')">Front-end</button>
+          <button onclick="filterProjects('backend')">Back-end</button>
+          <button onclick="filterProjects('dados')">Dados</button>
+              </div>
       <div class="portfolio-grid">
 
-          <div class="projeto-card" onclick="openModal('projeto00')">
+          <div class="projeto-card" data-category="dados" onclick="openModal('projeto00')">
             <div class="projeto-thumb">
               <img class="projeto-fundo" src="imgs/ExPy.jpg" alt="Análise de Vendas Python/Excel">
               <div class="projeto-info">
@@ -201,7 +208,7 @@
           </div>
 
 
-        <div class="projeto-card" onclick="openModal('projeto1')">
+        <div class="projeto-card" data-category="mobile" onclick="openModal('projeto1')">
           <div class="projeto-thumb">
             <img class="projeto-fundo" src="imgs/listadetarefas.png" alt="listadetarefas">
             <div class="projeto-info">
@@ -248,7 +255,7 @@
           </div>
         </div>
 
-        <div class="projeto-card" onclick="openModal('projeto2')">
+        <div class="projeto-card" data-category="mobile" onclick="openModal('projeto2')">
           <div class="projeto-thumb">
             <img class="projeto-fundo" src="imgs/listadetarefaskt.png" alt="listadetarefaskt">
             <div class="projeto-info">
@@ -296,7 +303,7 @@
           </div>
         </div>
 
-        <div class="projeto-card" onclick="openModal('projeto3')">
+        <div class="projeto-card" data-category="frontend" onclick="openModal('projeto3')">
           <div class="projeto-thumb">
             <img class="projeto-fundo" src="imgs/portifolio.png" alt="listadetarefas">
             <div class="projeto-info">
@@ -341,7 +348,7 @@
           </div>
         </div>
 
-        <div class="projeto-card" onclick="openModal('projeto4')">
+        <div class="projeto-card" data-category="dados" onclick="openModal('projeto4')">
           <div class="projeto-thumb">
             <img class="projeto-fundo" src="imgs/Excell.png" alt="conversor">
             <div class="projeto-info">
@@ -387,7 +394,7 @@
           </div>
         </div>
 
-        <div class="projeto-card" onclick="openModal('projeto5')">
+        <div class="projeto-card" data-category="dados" onclick="openModal('projeto5')">
           <div class="projeto-thumb">
             <img class="projeto-fundo" src="imgs/Excell.png" alt="listadetarefas">
             <div class="projeto-info">

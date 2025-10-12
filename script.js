@@ -149,3 +149,27 @@ window.addEventListener("scroll", () => {
     document.querySelector('.nav-links a[href="#contactme"]').classList.add("active");
   }
 });
+function filterProjects(category) {
+  const projects = document.querySelectorAll('.projeto-card');
+
+  projects.forEach(project => {
+    if (category === 'all' || project.dataset.category === category) {
+      project.style.display = 'block'; // mostra
+    } else {
+      project.style.display = 'none'; // esconde
+    }
+  });
+}
+const filterButtons = document.querySelectorAll('.portfolio-filters button');
+
+filterButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    // remove active de todos
+    filterButtons.forEach(b => b.classList.remove('active'));
+    // adiciona active no clicado
+    btn.classList.add('active');
+    
+    // filtra os projetos
+    filterProjects(btn.getAttribute('onclick').match(/'(.*)'/)[1]);
+  });
+});

@@ -470,6 +470,43 @@ html {
 .projeto-card:hover {
   transform: scale(1.05);
 }
+/* Container dos filtros */
+.portfolio-filters {
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* quebra linha se a tela for pequena */
+}
+
+/* Botões de filtro */
+.portfolio-filters button {
+  background: rgba(255, 255, 255, 0.1); 
+  color: #319795; 
+  border: 1px solid rgba(255, 255, 255, 0.2); 
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  backdrop-filter: blur(5px); 
+  transition: all 0.3s ease;
+  font-weight: 500;
+  font-size: 14px;
+  font-weight: bold;;
+}
+
+/* Botão hover */
+.portfolio-filters button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #319795;
+  transform: translateY(-2px);
+}
+
+/* Botão ativo */
+.portfolio-filters button.active {
+  background: rgba(255, 255, 255, 0.25);
+  border-bottom: 2px solid #319795;
+  color: #319795; 
+}
 
 .tech-icons {
   display: flex;
@@ -1160,4 +1197,28 @@ body.theme-light .nav-links a:hover {
 body.theme-light .nav-links a.active {
     color: #00ffd1; 
     border-bottom: 2px solid #00ffd1; /* indicador ativo */
+}
+body.theme-light .portfolio-filters button {
+  background: rgba(0, 0, 0, 0.05); 
+  color: #00ffd1; 
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+body.theme-light .portfolio-filters button:hover {
+  background: rgba(0, 0, 0, 0.1);
+  color: #00ffd1;
+  transform: translateY(-2px);
+}
+
+body.theme-light .portfolio-filters button.active {
+  color: #00ffd1;
+  border-bottom: 2px solid #00ffd1;
+  background: rgba(0, 0, 0, 0.15);
 }
