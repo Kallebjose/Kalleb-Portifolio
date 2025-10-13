@@ -115,6 +115,9 @@ section {
     align-items: center;
     margin-top: 1.25rem; /* 20px */
     background-color: transparent;
+    justify-content: center; 
+    align-items: center;    
+    margin: 2rem auto;
 }
 
 .hero-image img {
@@ -148,13 +151,28 @@ section {
     border-radius: 0.625rem; /* 10px */
     padding: 2.5rem; /* 40px */
     margin: 1.25rem auto; /* 20px auto */
-    max-width: 50rem; /* 800px */
+    max-width: 75%; 
+    text-align: justify; 
+    line-height: 1.7;
 }
+#about h1,
+#portfolio h1,
+#contact h1 {
+    text-align: center;
+}
+#frase {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #cccccc;
+  margin-top: 0.5rem;
+}
+
 #skills{
     border-radius: 0.625rem; /* 10px */
     padding: 2.5rem; /* 40px */
     margin: 1.25rem auto; /* 20px auto */
-    max-width: 60rem; /* 800px */
+    max-width: 70%;
 }
 #skills h1{
     color: #ffffff;
@@ -170,6 +188,7 @@ section {
     position: absolute;
     bottom: 2.5rem; /* 40px */
     left: 2.5rem; /* 40px */
+    right: 2.5rem; /* 40px */
     display: flex;
     flex-direction: column;
     gap: 0.625rem; /* 10px */
@@ -419,15 +438,16 @@ html {
 
 .portfolio-grid {
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
+  flex-wrap: wrap; 
+  gap: 1.5rem;
   justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  margin: 0 auto;
 }
 
 
 .projeto-card {
-  width: 100%;
-  max-width: 300px;
+  width: 18rem;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -461,6 +481,15 @@ html {
   color: white ;
   font-weight: bold;
   text-shadow: 0 0 10px black;
+}
+.hero-image img {
+    width: 55%;               
+    object-fit: cover;        
+    border-radius: 50%;      
+    border: 0.2rem solid #319795; 
+    display: block;
+    margin: 0 auto;
+;          
 }
 
 .projeto-card:hover img {
@@ -764,11 +793,6 @@ html {
 
     .hero-content p {
         font-size: 1rem;
-    }
-
-    .hero-image img {
-        width: 100%;
-        max-width: 20rem;
     }
 
     .social-buttons {
@@ -1221,4 +1245,7 @@ body.theme-light .portfolio-filters button.active {
   color: #00ffd1;
   border-bottom: 2px solid #00ffd1;
   background: rgba(0, 0, 0, 0.15);
+}
+body.theme-light .hero-image img {   
+    border: 0.2rem solid #00ffd1; 
 }
