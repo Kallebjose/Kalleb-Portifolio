@@ -153,7 +153,9 @@ function filterProjects(category) {
   const projects = document.querySelectorAll('.projeto-card');
 
   projects.forEach(project => {
-    if (category === 'all' || project.dataset.category === category) {
+const categories = project.dataset.category.split(" ");
+
+    if (category === 'all' || categories.includes(category)) {
       project.style.display = 'block'; // mostra
     } else {
       project.style.display = 'none'; // esconde
@@ -170,6 +172,7 @@ filterButtons.forEach(btn => {
     btn.classList.add('active');
     
     // filtra os projetos
+    const category = btn.dataset.filter;
     filterProjects(btn.getAttribute('onclick').match(/'(.*)'/)[1]);
   });
 });
